@@ -1,5 +1,6 @@
 import payment.Payment;
 import auth.Auth;
+import customer.Customer;
 import about.About;
 import login.Login;
 import order.Order;
@@ -25,6 +26,13 @@ public class App {
 
         About about = new About();
         about.displayInfo();
+
+        Customer customer = new Customer();
+        String name = "John Doe";
+        String email = "johndoe@example.com";
+        customer.addCustomer(name, email);
+        int customerId = 1; // Example customer ID
+        customer.removeCustomer(customerId);
 
         Order order = new Order();
         String product = "Laptop";
