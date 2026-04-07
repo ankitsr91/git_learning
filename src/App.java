@@ -1,5 +1,6 @@
 import payment.Payment;
 import student.Student;
+import teacher.Teacher;
 import auth.Auth;
 import customer.Customer;
 import about.About;
@@ -51,5 +52,11 @@ public class App {
         String course = "Computer Science";
         student.enrollCourse(studentId, course);
         System.out.println("Application execution completed.");
+        Teacher teacher = new Teacher();
+        String teacherName = "Jane Smith";
+        String subject = "Mathematics";
+        teacher.addTeacher(teacherName, subject);
+        int teacherId = 1; // Example teacher ID
+        teacher.removeTeacher(teacherId);
     }
 }
