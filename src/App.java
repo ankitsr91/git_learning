@@ -51,6 +51,5 @@ public class App {
         String course = "Computer Science";
         student.enrollCourse(studentId, course);
         System.out.println("Application execution completed.");
-        System.out.println("Thank you for using the Java Application!");
     }
 }
