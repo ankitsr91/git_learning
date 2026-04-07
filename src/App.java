@@ -3,6 +3,7 @@ import auth.Auth;
 import customer.Customer;
 import about.About;
 import login.Login;
+import order.Order;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -32,5 +33,12 @@ public class App {
         customer.addCustomer(name, email);
         int customerId = 1; // Example customer ID
         customer.removeCustomer(customerId);
+
+        Order order = new Order();
+        String product = "Laptop";
+        int quantity = 2;
+        order.placeOrder(product, quantity);
+        int orderId = 12345;
+        order.cancelOrder(orderId);
     }
 }
