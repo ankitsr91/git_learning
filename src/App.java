@@ -1,4 +1,5 @@
 import payment.Payment;
+import auth.Auth;
 import login.Login;
 
 public class App {
@@ -12,5 +13,12 @@ public class App {
         String username = "john_doe";
         String password = "password123";
         login.loginUser(username, password);
+        Auth auth = new Auth();
+        boolean isAuthenticated = auth.authenticateUser(username, password);
+        if (isAuthenticated) {
+            System.out.println("User authenticated successfully.");
+        } else {
+            System.out.println("Authentication failed.");
+        }
     }
 }
