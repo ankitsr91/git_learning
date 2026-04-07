@@ -1,4 +1,5 @@
 import payment.Payment;
+import teacher.Teacher;
 import auth.Auth;
 import customer.Customer;
 import about.About;
@@ -40,5 +41,12 @@ public class App {
         order.placeOrder(product, quantity);
         int orderId = 12345;
         order.cancelOrder(orderId);
+
+        Teacher teacher = new Teacher();
+        String teacherName = "Jane Smith";
+        String subject = "Mathematics";
+        teacher.addTeacher(teacherName, subject);
+        int teacherId = 1; // Example teacher ID
+        teacher.removeTeacher(teacherId);
     }
 }
