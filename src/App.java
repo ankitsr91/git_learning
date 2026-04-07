@@ -1,5 +1,6 @@
 import payment.Payment;
 import auth.Auth;
+import about.About;
 import login.Login;
 
 public class App {
@@ -20,5 +21,8 @@ public class App {
         } else {
             System.out.println("Authentication failed.");
         }
+
+        About about = new About();
+        about.displayInfo();
     }
 }
