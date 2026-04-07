@@ -1,4 +1,5 @@
 import payment.Payment;
+import about.About;
 import login.Login;
 
 public class App {
@@ -12,5 +13,8 @@ public class App {
         String username = "john_doe";
         String password = "password123";
         login.loginUser(username, password);
+
+        About about = new About();
+        about.displayInfo();
     }
 }
