@@ -1,4 +1,5 @@
 import payment.Payment;
+import student.Student;
 import teacher.Teacher;
 import auth.Auth;
 import customer.Customer;
@@ -42,6 +43,15 @@ public class App {
         int orderId = 12345;
         order.cancelOrder(orderId);
 
+        Student student = new Student();
+        String studentName = "Alice";
+        int age = 20;
+        student.addStudent(studentName, age);
+        int studentId = 1; // Example student ID
+        student.removeStudent(studentId);
+        String course = "Computer Science";
+        student.enrollCourse(studentId, course);
+        System.out.println("Application execution completed.");
         Teacher teacher = new Teacher();
         String teacherName = "Jane Smith";
         String subject = "Mathematics";

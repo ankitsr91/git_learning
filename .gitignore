@@ -1,3 +1,5 @@
 lib/
 .vscode/
 bin/
+# Added by ggshield
+.cache_ggshield
