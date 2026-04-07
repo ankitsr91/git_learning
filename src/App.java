@@ -2,6 +2,7 @@ import payment.Payment;
 import auth.Auth;
 import about.About;
 import login.Login;
+import order.Order;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -24,5 +25,12 @@ public class App {
 
         About about = new About();
         about.displayInfo();
+
+        Order order = new Order();
+        String product = "Laptop";
+        int quantity = 2;
+        order.placeOrder(product, quantity);
+        int orderId = 12345;
+        order.cancelOrder(orderId);
     }
 }
